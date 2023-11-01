@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Centro Estudios</title>
+  </head>
+  <body>
+    <form action="/subject" method="POST">
+      <p>
+        <label for="name">Asignatura:</label><br />
+        <input type="text" name="name" id="subject_name" /><br />
+        <label for="course">Curso:</label><br />
+        <select id="course" name="course">
+          <option value="1ESO">1ESO</option>
+          <option value="2ESO">2ESO</option>
+          <option value="3ESO">3ESO</option>
+          <option value="4ESO">4ESO</option>
+          <option value="1BACH">1BACH</option>
+          <option value="2BACH">2BACH</option>
+        </select>
+      </p>
+      <p><input type="submit" value="Enviar" /></p>
+    </form>
+  </body>
+</html>
