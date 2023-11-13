@@ -1,19 +1,21 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="scripts/findSchoolsForSelect.js" async type="module"></script> -->
     <title>App Centro Estudios</title>
   </head>
   <body>
-    <form action="/school" method="POST">
+    <form action="/api/v1/schools" method="POST">
       <p>
         <label for="name_school">Nombre centro:</label><br />
         <input type="text" name="name" id="name_school" /><br />
-        <label for="city">Municipio:</label><br />
-        <input type="text" name="city" id="city" />
+        <!--<label for="school_options">Nombres centros:</label><br />
+        <input type="text" name="name" id="name_school" /><br /> 
+        <select name="school" id="school_options"></select>-->
       </p>
       <p><input type="submit" value="Enviar" /></p>
+      <!--<input type="hidden" name="_method" value="delete" />-->
     </form>
   </body>
 </html>
